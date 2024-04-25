@@ -1620,7 +1620,7 @@ body {
 }
 @media (max-width:20em) {
   .block-slope__wrapper {
-    gap: .625rem
+    gap: .375rem
   }
   .block-slope__title {
     font-size: 1.75rem
@@ -1936,6 +1936,9 @@ body {
     transition: .3s;
     bottom: calc(50% - .0625rem)
   }
+  .block-slope__wrapper {
+    justify-content: space-around
+  }
   .footer__header {
     gap: .9375rem
   }
@@ -2225,14 +2228,14 @@ body {
   }
 }
 @media (min-width:20em) and (max-width:79em) {
-  @supports (gap:clamp(0.625rem ,0.4131355932rem + 1.0593220339vw ,1.25rem)) {
+  @supports (gap:clamp(0.375rem ,0.0783898305rem + 1.4830508475vw ,1.25rem)) {
     .block-slope__wrapper {
-      gap: clamp(.625rem ,.4131355932rem + 1.0593220339vw ,1.25rem)
+      gap: clamp(.375rem ,.0783898305rem + 1.4830508475vw ,1.25rem)
     }
   }
-  @supports not (gap:clamp(0.625rem ,0.4131355932rem + 1.0593220339vw ,1.25rem)) {
+  @supports not (gap:clamp(0.375rem ,0.0783898305rem + 1.4830508475vw ,1.25rem)) {
     .block-slope__wrapper {
-      gap: calc(.625rem + .625 * (100vw - 20rem)/ 59)
+      gap: calc(.375rem + .875 * (100vw - 20rem)/ 59)
     }
   }
   @supports (font-size:clamp(1.75rem ,-0.3050847458rem + 10.2754237288vw ,7.8125rem)) {
